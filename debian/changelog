@@ -1,5 +1,106 @@
-template-repository (1.0-1) unstable; urgency=medium
+ansible-runner (2.4.0-0.1) unstable; urgency=medium
 
-  * Initial release
+  + Non-maintainer upload.
+  * New upstream version 2.4.0 (Closes: #1073366, #1068087)
+  * Add dependency on pybuild-plugin-pyproject
+  * Remove dependency on python3-mock (Closes: #1068086)
+  * Add watch file
+  * Add gbp.conf matching existing repos
+  * Use new dh-sequence-python3
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Alexandre Detiste <tchet@debian.org>  Fri, 21 Jun 2024 08:15:17 +0200
+
+ansible-runner (2.3.6-1) sid; urgency=medium
+
+  * Uploading to sid.
+  * Merging upstream version 2.3.6.
+  * d/control:
+    - Removing Depends on python3-distutils (Closes: #1065827).
+    - Changing Depends from ansible to ansible-core only binaries from there are
+      necessary (Closes: #1067129).
+  * d/changelog: Correcting typo for 2.1.3-3.
+  * d/copyright: Updating for year 2024.
+
+ -- Sakirnth Nagarasa <sakirnth@gmail.com>  Mon, 25 Mar 2024 15:05:20 +0100
+
+ansible-runner (2.3.4-1) sid; urgency=medium
+
+  * Uploading to sid.
+  * Merging upstream version 2.3.4.
+
+ -- Sakirnth Nagarasa <sakirnth@gmail.com>  Tue, 12 Sep 2023 16:20:57 +0200
+
+ansible-runner (2.3.1-2) sid; urgency=medium
+
+  * d/control: Updating Standards-Version.
+
+ -- Sakirnth Nagarasa <sakirnth@gmail.com>  Wed, 04 Jan 2023 07:48:44 +0100
+
+ansible-runner (2.3.1-1) sid; urgency=medium
+
+  * Uploading to sid.
+  * Merging upstream version 2.3.1.
+  * Removing 0002-purge-deprecated-resource-profiling-capability.patch
+    it is already in upstream.
+
+ -- Sakirnth Nagarasa <sakirnth@gmail.com>  Sun, 13 Nov 2022 17:17:57 +0100
+
+ansible-runner (2.1.3-3) sid; urgency=medium
+
+  * d/control:
+    - Marking python-ansible-runner-doc as Multi-Arch foreign.
+    - Increment Standards-Version.
+
+ -- Sakirnth Nagarasa <sakirnth@gmail.com>  Thu, 23 Jun 2022 16:34:38 +0200
+
+ansible-runner (2.1.3-2) sid; urgency=medium
+
+  * Uploading to sid.
+  * d/changelog:
+    - Correcting wrong patch description for 2.1.3-1.
+    - Correcting wrong bug closing statement for 2.1.3-1.
+  * Removing deprecated resource profiling capability which used
+    cgroups (Closes: #993371).
+
+ -- Sakirnth Nagarasa <sakirnth@gmail.com>  Sun, 24 Apr 2022 17:45:17 +0200
+
+ansible-runner (2.1.3-1) sid; urgency=medium
+
+  * Uploading to sid.
+  * Merging upstream version 2.1.3.
+  * Adding patch to remove resource profiling capability.
+  * Removing deprecated resource profiling capability which used
+    cgroups (Closes: #993371).
+  * d/copyright: Correcting copyright years and a copyright owner mistake.
+
+ -- Sakirnth Nagarasa <sakirnth@gmail.com>  Sun, 24 Apr 2022 10:37:07 +0200
+
+ansible-runner (2.1.1-1) sid; urgency=medium
+
+  * Uploading to sid.
+  * Merging upstream version 2.1.1.
+  * Closes bug CVE-2021-3701.
+  * Updating build depends.
+  * Updating debian/copyright.
+  * Adding intersphinx patch and a Build-Depends-Indep that it works.
+  * Changing homepage url.
+  * Correcting changelog typo for 1.4.6-1.
+  * Removing python3-ansible-runner.lintian-overrides.
+
+ -- Sakirnth Nagarasa <sakirnth@gmail.com>  Sat, 20 Nov 2021 17:33:39 +0100
+
+ansible-runner (1.4.6-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Source-only upload to allow testing migration.
+
+  [ Sakirnth Nagarasa ]
+  * Changing VCS path in debian/control.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 17 Oct 2021 13:17:54 -0400
+
+ansible-runner (1.4.6-1) sid; urgency=medium
+
+  * Initial release (Closes: #950829).
+
+ -- Sakirnth Nagarasa <sakirnth@gmail.com>  Sat, 28 Nov 2020 08:50:54 +0100
