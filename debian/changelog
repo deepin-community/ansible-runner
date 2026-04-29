@@ -1,18 +1,32 @@
+ansible-runner (2.4.1-1) unstable; urgency=medium
+
+  * d/gbp.conf: Adding debian/unstable as default branch.
+  * d/control: Updating Standards-Version.
+  * d/copyright:
+    - Updating years and author for debian/*.
+    - Fixing file reference path.
+  * d/changelog:
+    - Changing naming sid to unstable.
+    - Norming entry for 2.4.0-0.1.
+  * New upstream version 2.4.1.
+
+ -- Sakirnth Nagarasa <sakirnth@gmail.com>  Wed, 02 Apr 2025 15:07:04 +0200
+
 ansible-runner (2.4.0-0.1) unstable; urgency=medium
 
   + Non-maintainer upload.
-  * New upstream version 2.4.0 (Closes: #1073366, #1068087)
-  * Add dependency on pybuild-plugin-pyproject
-  * Remove dependency on python3-mock (Closes: #1068086)
-  * Add watch file
-  * Add gbp.conf matching existing repos
-  * Use new dh-sequence-python3
+  * New upstream version 2.4.0 (Closes: #1073366, #1068087).
+  * Add dependency on pybuild-plugin-pyproject.
+  * Remove dependency on python3-mock (Closes: #1068086).
+  * Add watch file.
+  * Add gbp.conf matching existing repos.
+  * Use new dh-sequence-python3.
 
  -- Alexandre Detiste <tchet@debian.org>  Fri, 21 Jun 2024 08:15:17 +0200
 
-ansible-runner (2.3.6-1) sid; urgency=medium
+ansible-runner (2.3.6-1) unstable; urgency=medium
 
-  * Uploading to sid.
+  * Uploading to unstable.
   * Merging upstream version 2.3.6.
   * d/control:
     - Removing Depends on python3-distutils (Closes: #1065827).
@@ -23,29 +37,29 @@ ansible-runner (2.3.6-1) sid; urgency=medium
 
  -- Sakirnth Nagarasa <sakirnth@gmail.com>  Mon, 25 Mar 2024 15:05:20 +0100
 
-ansible-runner (2.3.4-1) sid; urgency=medium
+ansible-runner (2.3.4-1) unstable; urgency=medium
 
-  * Uploading to sid.
+  * Uploading to unstable.
   * Merging upstream version 2.3.4.
 
  -- Sakirnth Nagarasa <sakirnth@gmail.com>  Tue, 12 Sep 2023 16:20:57 +0200
 
-ansible-runner (2.3.1-2) sid; urgency=medium
+ansible-runner (2.3.1-2) unstable; urgency=medium
 
   * d/control: Updating Standards-Version.
 
  -- Sakirnth Nagarasa <sakirnth@gmail.com>  Wed, 04 Jan 2023 07:48:44 +0100
 
-ansible-runner (2.3.1-1) sid; urgency=medium
+ansible-runner (2.3.1-1) unstable; urgency=medium
 
-  * Uploading to sid.
+  * Uploading to unstable.
   * Merging upstream version 2.3.1.
   * Removing 0002-purge-deprecated-resource-profiling-capability.patch
     it is already in upstream.
 
  -- Sakirnth Nagarasa <sakirnth@gmail.com>  Sun, 13 Nov 2022 17:17:57 +0100
 
-ansible-runner (2.1.3-3) sid; urgency=medium
+ansible-runner (2.1.3-3) unstable; urgency=medium
 
   * d/control:
     - Marking python-ansible-runner-doc as Multi-Arch foreign.
@@ -53,9 +67,9 @@ ansible-runner (2.1.3-3) sid; urgency=medium
 
  -- Sakirnth Nagarasa <sakirnth@gmail.com>  Thu, 23 Jun 2022 16:34:38 +0200
 
-ansible-runner (2.1.3-2) sid; urgency=medium
+ansible-runner (2.1.3-2) unstable; urgency=medium
 
-  * Uploading to sid.
+  * Uploading to unstable.
   * d/changelog:
     - Correcting wrong patch description for 2.1.3-1.
     - Correcting wrong bug closing statement for 2.1.3-1.
@@ -64,9 +78,9 @@ ansible-runner (2.1.3-2) sid; urgency=medium
 
  -- Sakirnth Nagarasa <sakirnth@gmail.com>  Sun, 24 Apr 2022 17:45:17 +0200
 
-ansible-runner (2.1.3-1) sid; urgency=medium
+ansible-runner (2.1.3-1) unstable; urgency=medium
 
-  * Uploading to sid.
+  * Uploading to unstable.
   * Merging upstream version 2.1.3.
   * Adding patch to remove resource profiling capability.
   * Removing deprecated resource profiling capability which used
@@ -75,9 +89,9 @@ ansible-runner (2.1.3-1) sid; urgency=medium
 
  -- Sakirnth Nagarasa <sakirnth@gmail.com>  Sun, 24 Apr 2022 10:37:07 +0200
 
-ansible-runner (2.1.1-1) sid; urgency=medium
+ansible-runner (2.1.1-1) unstable; urgency=medium
 
-  * Uploading to sid.
+  * Uploading to unstable.
   * Merging upstream version 2.1.1.
   * Closes bug CVE-2021-3701.
   * Updating build depends.
@@ -99,7 +113,7 @@ ansible-runner (1.4.6-1.1) unstable; urgency=medium
 
  -- Boyuan Yang <byang@debian.org>  Sun, 17 Oct 2021 13:17:54 -0400
 
-ansible-runner (1.4.6-1) sid; urgency=medium
+ansible-runner (1.4.6-1) unstable; urgency=medium
 
   * Initial release (Closes: #950829).
 
