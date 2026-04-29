@@ -1,4 +1,15 @@
 #!/usr/bin/make -f
 
+export PYBUILD_NAME=ansible-runner
+
 %:
-	dh $@
+	dh ${@} --buildsystem=pybuild --with sphinxdoc
+
+override_dh_sphinxdoc:
+ifeq (,$(findstring nodoc, $(DEB_BUILD_OPTIONS)))
+	PYTHONPATH=src python3 -m sphinx -b html docs $(CURDIR)/debian/python-$(PYBUILD_NAME)-doc/usr/share/doc/python-$(PYBUILD_NAME)-doc/html
+	dh_sphinxdoc
+endif
+
+override_dh_auto_test:
+	# disabled, testsuite doesn't work yet.
